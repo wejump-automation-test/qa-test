@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body id="page-top" class="text-center">
+  <div class="col-sm-12">
+    <p><button id="btn_one" type="button" class="btn btn-lg btn-default">One</button></p>
+    <p><button id="btn_two" type="button" class="btn btn-default">Two</button></p>
+    <p><button id="btn_three" type="button" class="btn btn-sm btn-default">Three</button></p>
+    <p><button id="btn_link" type="button" class="btn btn-xs btn-link">Four</button></p>
+    <p><select id="select_box"><option value="option_one">ExampleOne</option><option value="option_two">ExampleTwo</option><option value="option_three">ExampleThree</option></select></p>
+    <p><div class="checkbox"><label><input type="checkbox" id="opt_one" value="">OptionOne</label></div></p>
+    <p><div class="checkbox"><label><input type="checkbox" id="opt_two" value="">OptionTwo</label></div></p>
+    <p><div class="checkbox"><label><input type="checkbox" id="opt_three" value="">OptionThree</label></div></p>
+    <p><button type="button" id="reset_buttons" class="btn btn-lg btn-success">Reset Buttons</button></p>
+</body>
+
+    <script>
+        function addButtonActions() {
+            // Add Buttons Actions
+            var btn_one_click = $('#btn_one').click(function() {
+                $(this).slideUp();
+            });
+            var btn_two_click = $('#btn_two').click(function() {
+                $(this).slideUp();
+            });
+            var btn_three_click = $('#btn_three').click(function() {
+                $(this).slideUp();
+            });
+            var btn_link_click = $('#btn_link').click(function() {
+                $(this).slideUp();
+            });
+            var btn_reset_click = $('#reset_buttons').click(function() {
+                $('#btn_one').slideDown();
+                $('#btn_two').slideDown();
+                $('#btn_three').slideDown();
+                $('#btn_link').slideDown();
+            });    
+        }
+        addButtonActions()
+    </script>
+
+</html>

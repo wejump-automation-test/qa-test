@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body id="page-top" class="text-center">
+  <div class="col-sm-12">
+    <p><input type="text" class="form-control" placeholder="YourFirstName" id="first_name"></p>
+    <p><input type="text" class="form-control" placeholder="YourMidName" id="mid_name"></p>
+    <p><input type="text" class="form-control" placeholder="YourLastName" id="last_name"></p>
+    <p><input type="text" class="form-control" placeholder="YourAge" id="age"></p>
+    <p><input type="text" class="form-control" placeholder="YourEmail" id="email"></p>
+    <p><input type="text" class="form-control" placeholder="YourJob" id="job"></p>
+    <p><input type="text" class="form-control" placeholder="YourGender" id="gender"></p>
+    <p><button type="button" id="reset_fields" class="btn btn-lg btn-success">Reset Fields</button></p>
+  </div>
+</body>
+
+    <script>
+        function addFieldsActions() {
+            // Add Fields Actions
+            var fields_reset_click = $('#reset_fields').click(function() {
+                $('#first_name').val('');
+                $('#mid_name').val('');
+                $('#last_name').val('');
+                $('#age').val('');
+                $('#email').val('');
+                $('#job').val('');
+                $('#gender').val('');
+            }); 
+        }
+        addFieldsActions()
+    </script>
+
+</html>
